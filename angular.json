@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "messagefirebase": {
@@ -121,8 +121,16 @@
               "devServerTarget": "messagefirebase:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "messagefirebase"
+    }
+  },
+  "defaultProject": "messagefirebase",
+  "cli": {
+    "analytics": false
+  }
 }
